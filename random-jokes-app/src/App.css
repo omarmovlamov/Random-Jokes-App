@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100dvw;
+  height: 100dvh;
+}
+body {
+  background: rgb(255, 247, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 247, 0, 1) 9%,
+    rgba(32, 33, 38, 1) 100%
+  );
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header button {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 3px 5px 1px black;
+  transform: scale(1);
+  transition: 0.4s ease-in;
+}
+button:hover {
+  background-color: black;
+  color: #d5ce07;
+  box-shadow: 3px 5px 1px 2px transparent;
+  transform: scale(1.1);
+}
+.main {
+  margin-top: 10em;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 8px 8px 1px #cecece;
+  width: 48em;
+  height: 12em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: 0.6s ease-in;
+}
+.main:hover {
+  background-color: #fff;
+  box-shadow: 8px 8px 1px black;
+  color: black;
+  transform: scale(1.1);
+}
+.main p {
+  text-shadow: 2px 2px 4px gray;
+  padding: 50px 50px;
+}
